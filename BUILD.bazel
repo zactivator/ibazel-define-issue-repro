@@ -1,0 +1,7 @@
+load(":custom_rule.bzl", "custom_rule")
+
+custom_rule(
+    name = "sed_file",
+    srcs = glob(["original_file.sh"]),
+    outs = ["seded_file.sh"],
+)
